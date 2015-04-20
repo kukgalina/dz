@@ -1,0 +1,81 @@
+.it-header {
+  display: none;
+}
+
+.login-form-box {
+  width: 590px;
+  margin: 120px auto;
+  padding: 0;
+  border-radius: 4px;
+  background: #eff3f7;
+  overflow: hidden;
+  box-shadow: 0 4px 7px 2px rgba(13, 16, 7, 0.3);
+}
+.login-form-title {
+  margin-bottom: 25px;
+  padding: 20px 135px 40px;
+
+  font-family: 'fira_sansbook';
+  font-size: 40px;
+  color: #ffffff;
+  background: #48cbe8;
+  box-shadow: inset 0 -15px 0 0 #67dffa;
+
+}
+.login-form {
+  width: 430px;
+  margin: 0 auto;
+  /* background: green; */
+  text-align: center;
+} 
+
+.input-box {
+  width: 100%;
+  margin-bottom: 25px;
+  /* background: red; */
+}
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 36px;
+  color: #959aa8;
+  
+  /* background: yellow; */
+}
+.input-text {
+  width: 382px;
+  border-radius: 4px;
+  border:1px solid #48cbe8;
+  padding: 20px;
+  background: #ffffff;
+}
+.input-text:focus {
+  border: 1px solid #959aa8;
+}
+
+.input-text::-webkit-input-placeholder {
+    color: #48cbe8; /* Chrome, Safari, Opera */
+   }
+.input-text::-moz-placeholder {
+    color: #48cbe8; /* Firefox */
+   }
+.input-text:-ms-input-placeholder { 
+    color: #48cbe8; /* IE */
+}
+.input-button {
+  margin-top: 5px;
+  padding: 10px 65px 15px;
+  background: #48cbe8;
+  border: none;
+  border-radius: 4px;
+  color: #f6f6f6;
+  font-family: 'fira_sansbook';
+  font-size: 36px;
+  line-height: 36px;
+  box-shadow: inset 0 -5px 0 0 #3ba8c0;
+}
+.input-button:hover {
+  box-shadow: none;
+  padding: 12px 65px 13px;
+}

@@ -30,31 +30,63 @@
 	<![endif]-->
 
 <div class="wrap">
-		
-	<div class="login-form-box">
-		<div class="login-form-title">
-			Авторизируйтесь
+	<!-- начало header -->
+	<header class="it-header line">
+		<div class="container-header">
+			<!-- логотип -->
+			<a href="" class="logo">
+				<img src="img/logo.png" alt="логотип" class="logo-img">
+				<span class="caption-img"></span>
+			</a>
+			<!--конец кода логотипа -->
 		</div>
-		<form action="" method="post" class="login-form">
-			<div class="input-box">
-				<label class="login-input" for="login">
-					Логин
-				</label>
-				<input type="text" class="input-text" id="login" name="login" placeholder="Введите логин" required>
+	</header>
+	<!-- конец header -->
+	<div class="container-body clearfix">
+		<div class="login-form-box">
+			<div class="login-form-title">
+				Авторизируйтесь
 			</div>
-			<div class="input-box">
-				<label class="password-input" for="password">
-					Пароль
-				</label>
-				<input type="password" class="input-text" id="password" name="password" placeholder="Введите пароль" required>
-			</div>
-			<div class="input-box">
-				<input type="submit"  class="input-button" value="Войти">
-			</div>
-		</form>
+			<form action="" method="post" class="login-form">
+				<div class="input-box">
+					<label class="login-input" for="login">
+						Логин
+					</label>
+					<input type="text" class="input-text" id="login" name="login" placeholder="Введите логин" required>
+				</div>
+				<div class="input-box">
+					<label class="password-input" for="password">
+						Пароль
+					</label>
+					<input type="password" class="input-text" id="password" name="password" placeholder="Введите пароль" required>
+				</div>
+				<div class="input-box">
+					<input type="submit"  class="input-button" value="Войти">
+				</div>
+			</form>
+		</div>
 	</div>
 
 </div>
+
+<!-- начало footer -->
+<footer class="it-footer line">
+		<div class="container-footer">
+			<!-- кнопка авторизации -->
+			<div class="button-authorization">
+				<a href="login_form.html" class="login">
+				Войти
+				</a>
+				<a href="" class="logout">
+				Выход	
+				</a>
+			</div>
+			<!-- конец кнопка авторизации -->
+			<p class="copyright"> © 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его
+			</p>
+		</div>
+</footer>
+<!-- конец footer -->
 
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="js/main.js"></script>
