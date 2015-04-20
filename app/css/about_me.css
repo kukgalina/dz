@@ -1,0 +1,139 @@
+/* Блоки: осн.информация, опыт работы, бразование; */
+.resume {
+  margin-bottom: 24px;
+  
+  font-family: 'fira_sansbook';
+  font-size: 0;
+  
+	background: #eff3f7;
+	border-radius: 4px; 
+}
+/* обнуляем отступ после последнего блока */
+.resume:last-child {
+  margin-bottom: 0;
+}
+
+/* заголовок блоков резюме */
+.resume-paragraph {
+	display: inline-block;
+  margin-bottom: 21px;
+	padding: 13px 20px 12px 20px;
+
+  font-size: 27px;
+  color: #3ba8c0;
+	border-bottom: 2px solid #3ba8c0;
+}
+
+
+/* инфо в блоках резюме */
+.resume-info {
+  padding-bottom: 44px;
+}
+
+
+/* фото */
+.my-photo {
+  float: left;
+  margin: 20px 21px 0 55px;
+}
+.img-wrap{
+  width: 141px;
+  height: 141px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #3ba8c0;
+}
+.it-my-photo {
+  width: 100%;
+}
+
+
+/* основная информация обо мне */
+.about-info-list {
+  width: 410px;
+  float: left; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* внешний отступ элементов списка обо мне кроме последнего */
+.about-info-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.about-info-definition {
+  float: left;
+  margin-right: 20px;
+  font-family: 'fira_sansmedium';
+  font-size: 17px;
+}
+.about-info-value {
+  width: 210px;
+  float: left;
+  font-size: 15px;
+  color: #37424d;
+}
+
+ /* Навыки */
+ .know-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+ .know-item {
+  float: left;
+
+  margin-top: 8px;
+  margin-right: 7px;
+  padding: 2px 15px;
+
+  font-family: 'proxima_nova_condensed';
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  vertical-align: middle;
+
+  border-radius: 2px;
+  background-image: 
+     linear-gradient(0deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+ }
+ .know-item:nth-child(3) {
+  padding: 2px 14px;
+ }
+ 
+
+.resume-list { 
+  margin: 0;
+  padding: 0;
+	list-style: none;
+	color: #4a545d;	
+}
+.resume-item {
+  margin-top: 0;
+  margin-bottom: 18px;
+  margin-left: 53px;
+  padding-left: 71px;
+
+}
+.resume-item:last-child {
+  margin-bottom: 0px;
+}
+/* учреждение, где учились или работали */
+.place {
+	font-size: 17px; 
+}
+/* период работы или обучения */
+.time {
+  font-family: 'fira_sanslight';
+	font-size: 15px;
+  line-height: 100%;
+}
+.work {
+  background: url(../img/work.png) 0px center no-repeat;
+}
+.college {
+  background: url(../img/ob.png) 0px center no-repeat;
+}
+.course {
+  background: url(../img/courses.png) 0px center no-repeat;
+}
