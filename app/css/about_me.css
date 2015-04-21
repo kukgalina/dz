@@ -1,3 +1,4 @@
+/* ---обо мне--- */
 /* Блоки: осн.информация, опыт работы, бразование; */
 .resume {
   margin-bottom: 24px;
@@ -60,7 +61,7 @@
 .about-info-item:not(:last-child) {
   margin-bottom: 6px;
 }
-
+/* пункт - значение блок основная информация */
 .about-info-definition {
   float: left;
   margin-right: 20px;
@@ -101,7 +102,7 @@
   padding: 2px 14px;
  }
  
-
+/* списки во 2-м и 3-м блоках */
 .resume-list { 
   margin: 0;
   padding: 0;
@@ -113,12 +114,11 @@
   margin-bottom: 18px;
   margin-left: 53px;
   padding-left: 71px;
-
 }
 .resume-item:last-child {
   margin-bottom: 0px;
 }
-/* учреждение, где учились или работали */
+/* учреждение, где училась или работала */
 .place {
 	font-size: 17px; 
 }
@@ -128,6 +128,7 @@
 	font-size: 15px;
   line-height: 100%;
 }
+/* иконки: работа, колледж, курсы на заднем фоне */
 .work {
   background: url(../img/work.png) 0px center no-repeat;
 }
@@ -137,3 +138,4 @@
 .course {
   background: url(../img/courses.png) 0px center no-repeat;
 }
+/* -----обо мне----- */

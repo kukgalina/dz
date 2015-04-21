@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Связаться со мной</title>
+	<!-- SEO оптимизация -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- Иконка -->
+	<link rel="short icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- CSS -->
+	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+
+	<link rel="stylesheet" href="font/fira/fira.css">
+	<link rel="stylesheet" href="font/proximanova/proximanova.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="css/feedback_form.css">
+	<!-- JS modernizr здесь-->
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+
+<body>
+	<!--[if It IE 7]>
+	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+	<![endif]-->
+
+<div class="wrap">
+		<!-- начало header -->
+		<header class="it-header line">
+			<div class="container-header">
+				<!-- логотип -->
+				<a href="" class="logo">
+					<img src="img/logo.png" alt="логотип" class="logo-img">
+					<span class="caption-img"></span>
+				</a><!--конец кода логотипа -->
+
+			</div>
+		</header><!-- конец header -->
+
+		<!-- начало основного контента -->
+		<div class="container-body clearfix">
+			<!-- навигация -->
+			<div class="menu">
+				<ul class="menu-list">
+					<li class="menu-item">
+						<a href="index.html" class="menu-link">Обо мне</a>
+					</li>
+					<li class="menu-item">
+						<a href="portfolio.html" class="menu-link">Мои работы</a>
+					</li>
+					<li class="menu-item">
+						<a href="feedback_form.html" class="menu-link">Связаться со мной</a>
+					</li>
+				</ul>
+			</div><!-- конец навигация -->
+
+			<!-- меняющийся контент -->
+			<div class="varying-content">
+				<!-- обёртка формы обратной связи -->
+				<div class="form-feedback-wrap">
+					<!-- заголовок формы -->
+					<div class="form-feedback-title">
+						У вас интересный проект? Напишите мне
+					</div><!-- конец заголовок формы -->
+
+					<!-- форма обратной связи -->
+					<form action="" method="post" class="form-feedback">
+						<!-- контейнер с элементами формы -->
+						<div class="form-feedback-box clearfix">
+							<!-- напишите имя -->
+							<div class="input-box name">
+								<label class="label-text" for="name">Имя</label>
+								<input type="text" class="input-text" id="name" name="name" placeholder="Как к Вам обращаться">
+							</div><!-- конец напишите имя -->
+
+							<!-- напишите почту -->
+							<div class="input-box email">
+								<label class="label-text" for="email">Email</label>
+								<input type="email" class="input-text" id="email" name="email" placeholder="Куда мне писать">
+							</div><!-- конец напишите почту -->
+
+							<!-- напишите сообщение -->
+							<div class="input-box message">
+								<label class="label-text" for="massage">Сообщение</label>
+								<textarea class="input-text" id="message" name="massage" placeholder="Кратко в чем суть" rows="7"></textarea>
+							</div><!-- конец напишите сообщение -->
+
+							<!-- напишите код с картинки -->
+							<div class="input-box captcha clearfix">
+								<label class="label-text" for="captcha-response"> Введите код, указанный на картинке </label>
+								<!-- обёртка картинки-каптчи -->
+								<div id="captcha-image" class="captcha-image">
+									<img id="captcha-challenge" class="captcha-challenge" alt="Проверка по слову" src="../img/code.jpg">
+								</div><!-- конец обёртка картинки-каптчи -->
+
+								<input type="text" id="captcha-response" class="input-text" name="captcha-response" placeholder="Введите код">
+							</div><!-- конец напишите код с картинки -->
+
+							<!-- кнопка отправить -->
+							<div class="input-box submit">
+								<input type="submit"  class="input-button" value="Отправить">
+							</div><!-- конец кнопка отправить -->
+
+							<!-- кнопка очистиь-->
+							<div class="input-box reset">
+								<input type="reset"  class="input-button" value="Очистить">
+							</div><!-- конец кнопка очистить -->
+
+						</div><!-- конец контейнер с элементами формы -->
+
+					</form><!-- конец форма обратной связи -->
+
+				</div><!-- конец обёртки формы обратной связи -->
+
+			</div><!-- конец меняющийся контент -->
+
+			<!-- контакты -->
+			<div class="contacts">
+				<div class="contacts-title">
+				Kонтакты
+				</div>
+				<ul class="contacts-list">
+					<li class="contacts-item">
+						<a href="" class="contacts-link mail">ya.mail.gk@yandex.ru</a>
+					</li>
+					<li class="contacts-item">
+						<a href="" class="contacts-link telephon">+79814230204</a>
+					</li>
+					<li class="contacts-item">
+						<a href="" class="contacts-link skype">galya_kuklina</a>
+					</li>
+				</ul>
+			</div><!-- конец контакты -->
+
+			<!-- соцкнопки -->
+			<div class="socmedia">
+				<ul class="socmedia-list">
+					<li class="socmedia-item">
+						<a href="" class="socmedia-link vk">vkontakte</a>
+					</li>
+					<li class="socmedia-item">
+						<a href="" class="socmedia-link tw">twitter</a>
+					</li>
+					<li class="socmedia-item">
+						<a href="" class="socmedia-link f">facebook</a>
+					</li>
+					<li class="socmedia-item">
+						<a href="" class="socmedia-link g">github</a>
+					</li>
+				</ul>
+			</div><!-- конец соцкнопки -->
+
+		</div><!-- конец основной контент -->
+
+</div>
+
+<!-- начало footer -->
+<footer class="it-footer line">
+		<div class="container-footer">
+			<!-- кнопка авторизации -->
+			<div class="button-authorization">
+				<a href="login_form.html" class="login">
+				Войти
+				</a>
+				<a href="" class="logout">
+				Выход	
+				</a>
+			</div><!-- конец кнопка авторизации -->
+
+			<p class="copyright"> © 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+		</div>
+</footer><!-- конец footer -->
+
+
+
+	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

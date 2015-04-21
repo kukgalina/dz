@@ -157,6 +157,7 @@ html, body {
 .contacts-link:hover {
   text-decoration: underline;
 }
+/* иконки контактов на заднем фоне */
 .mail {
   background: #41b9d4 url(../img/icon_mail.png) 42px center no-repeat;
 }
@@ -194,6 +195,7 @@ html, body {
   height: 100%;
   display: block; 
 }
+/* иконки соцсетей на заднем фоне */
 .vk {
   background: url(../img/s-vk.png) 50% 50% no-repeat;
 }
