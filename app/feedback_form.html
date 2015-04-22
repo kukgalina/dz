@@ -31,7 +31,7 @@
 
 <div class="wrap">
 		<!-- начало header -->
-		<header class="it-header line">
+		<header class="it-header">
 			<div class="container-header">
 				<!-- логотип -->
 				<a href="" class="logo">
@@ -54,7 +54,7 @@
 						<a href="portfolio.html" class="menu-link">Мои работы</a>
 					</li>
 					<li class="menu-item">
-						<a href="feedback_form.html" class="menu-link">Связаться со мной</a>
+						<a href="feedback_form.html" class="menu-link active">Связаться со мной</a>
 					</li>
 				</ul>
 			</div><!-- конец навигация -->
@@ -65,7 +65,7 @@
 				<div class="form-feedback-wrap">
 					<!-- заголовок формы -->
 					<div class="form-feedback-title">
-						У вас интересный проект? Напишите мне
+						У вас интересный проект? Напишите мне.
 					</div><!-- конец заголовок формы -->
 
 					<!-- форма обратной связи -->
@@ -73,41 +73,40 @@
 						<!-- контейнер с элементами формы -->
 						<div class="form-feedback-box clearfix">
 							<!-- напишите имя -->
-							<div class="input-box name">
+							<div class="name">
 								<label class="label-text" for="name">Имя</label>
 								<input type="text" class="input-text" id="name" name="name" placeholder="Как к Вам обращаться">
 							</div><!-- конец напишите имя -->
 
 							<!-- напишите почту -->
-							<div class="input-box email">
+							<div class="email-input">
 								<label class="label-text" for="email">Email</label>
 								<input type="email" class="input-text" id="email" name="email" placeholder="Куда мне писать">
 							</div><!-- конец напишите почту -->
 
 							<!-- напишите сообщение -->
-							<div class="input-box message">
+							<div class="message">
 								<label class="label-text" for="massage">Сообщение</label>
-								<textarea class="input-text" id="message" name="massage" placeholder="Кратко в чем суть" rows="7"></textarea>
-							</div><!-- конец напишите сообщение -->
-
+								<textarea class="input-text" id="message" name="massage" placeholder="Кратко в чем суть"></textarea>
+							</div> <!-- конец напишите сообщение -->
 							<!-- напишите код с картинки -->
-							<div class="input-box captcha clearfix">
+							<div class="captcha clearfix">
 								<label class="label-text" for="captcha-response"> Введите код, указанный на картинке </label>
 								<!-- обёртка картинки-каптчи -->
 								<div id="captcha-image" class="captcha-image">
 									<img id="captcha-challenge" class="captcha-challenge" alt="Проверка по слову" src="../img/code.jpg">
 								</div><!-- конец обёртка картинки-каптчи -->
 
-								<input type="text" id="captcha-response" class="input-text" name="captcha-response" placeholder="Введите код">
+								<input type="text" id="captcha-response" class="input-text code" name="captcha-response" placeholder="Введите код">
 							</div><!-- конец напишите код с картинки -->
 
 							<!-- кнопка отправить -->
-							<div class="input-box submit">
-								<input type="submit"  class="input-button" value="Отправить">
+							<div class="submit">
+								<input type="submit"  class="input-button " value="Отправить">
 							</div><!-- конец кнопка отправить -->
 
 							<!-- кнопка очистиь-->
-							<div class="input-box reset">
+							<div class="reset">
 								<input type="reset"  class="input-button" value="Очистить">
 							</div><!-- конец кнопка очистить -->
 
@@ -160,11 +159,11 @@
 </div>
 
 <!-- начало footer -->
-<footer class="it-footer line">
+<footer class="it-footer">
 		<div class="container-footer">
 			<!-- кнопка авторизации -->
 			<div class="button-authorization">
-				<a href="login_form.html" class="login">
+				<a href="login_form.html" class="login-open">
 				Войти
 				</a>
 				<a href="" class="logout">

@@ -29,26 +29,15 @@ html, body {
 /* --ХЭДЕР-- */
 .it-header {
 	min-height: 119px;
-}
-/* линия градиентом */
-.line {
-	background: #eff3f7;
-	background-image:
-  -webkit-gradient(linear, 0 100%, 0 0, from(rgb(28,102,122)), color-stop(0, rgb(246,250,254)), color-stop(0, rgb(216,216,216)), color-stop(0, rgb(242,246,250)), color-stop(0.28, rgb(135,174,186)), color-stop(0.48, rgb(28,102,122)), color-stop(0.71, rgb(135,174,186)), to(rgb(242,246,250)));
-  background-image:
-  -webkit-linear-gradient(90deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
-  background-image:
-  -moz-linear-gradient(90deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
-  background-image:
-  -o-linear-gradient(90deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
-  background-image:
-  linear-gradient(90deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
-  background-size: 1200px 3px;
+  /* линия градиентом */
+  background-color: #eff3f7;
+  background-image: url(../img/line.png);
+  background-size: 100%;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
-.it-header {
-	background-position: center bottom;
-}
+
+ 
 .container-header {
 	width: 1200px; 
 	margin: 0 auto;
@@ -95,8 +84,8 @@ html, body {
 }
 .menu-link {
   display: block;
-  margin: 0 10px -2px 10px;
-  padding: 20px 16px;
+  margin: 0px 10px -2px 10px;
+  padding: 21px 0 17px 16px;
 
   font-size: 21px;
   color: #959aa8;
@@ -106,16 +95,20 @@ html, body {
   
 }
 .menu-link:hover {
-  margin: 0 10px -2px 10px;
+  margin: 0px 10px -2px 10px;
   color: #3ba8c0;
-  border-bottom: 2px solid #3ba8c0;
 }
-.menu-link:active {
+.menu-item .active {
+  margin: 0 0 0 0;
+  padding: 22px 10px 14px 26px;
   font-size: 23px;
   color: #fff;
   background: #3ba8c0;
-  
 }
+.menu-item:last-child .active {
+  font-size: 21px;
+}
+
 
 
 
@@ -135,6 +128,7 @@ html, body {
   width: 250px;
   overflow: hidden;
 
+  font-family: 'fira_sansbook';
   background: #3ba8c0;
   border-radius: 4px;
 }
@@ -154,8 +148,15 @@ html, body {
   text-decoration: none;
   color: #ffffff; 
 }
-.contacts-link:hover {
-  text-decoration: underline;
+.contacts-link:after {
+  content: "";
+  display: none;
+  width: 90%;
+  height: 1px;
+  background: #fff;
+}
+.mail:hover .contacts-link:after {
+  display: block;
 }
 /* иконки контактов на заднем фоне */
 .mail {
@@ -226,7 +227,13 @@ html, body {
   width: 100%;
 	height: 80px;
   margin-top: -80px;
+
+  /* линия градиентом */
+  background-color: #eff3f7;
+  background-image: url(../img/line.png);
+  background-size: 100%;
   background-position: center top;
+  background-repeat: no-repeat;
  }
 .container-footer {
   width: 960px;
@@ -235,14 +242,14 @@ html, body {
 .button-authorization {
   width: 100px;
   position: relative;
-  bottom: -23px;
-  left: 31px;
+  bottom: -26px;
+  left: 29px;
 
   font-family: 'fira_sansbook';
   font-size: 16px;
   color: #4a545d;
 }
-.button-authorization .login {
+.button-authorization .login-open {
   height: 35px;
   display: inline-block;
   padding-left: 25px;
@@ -250,6 +257,7 @@ html, body {
   vertical-align: middle;
   line-height: 35px;
   text-decoration: none;
+  font-size: 0px;
   color: #4a545d;
 
   background: url(../img/lockclosed.png) left center no-repeat;

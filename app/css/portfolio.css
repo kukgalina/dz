@@ -1,70 +1,129 @@
+/* мои работы */
+
 .portfolio {
 	font-family: 'fira_sansbook';
 	background: #eff3f7;
 	border-radius: 4px; 
+  padding: 0 0 260px 0;
 }
+
+/* заголовок */
 .portfolio-title {
 	display: inline-block;
-  	margin-bottom: 34px;
-	padding: 13px 20px 12px 20px;
+  margin-bottom: 34px;
+	padding: 10px 22px 12px 23px;
 
  	font-size: 27px;
  	color: #3ba8c0;
 	border-bottom: 2px solid #3ba8c0;
 }
+
+/* список работ */
 .portfolio-list {
-	margin: 0px;
-	padding: 0px;
-  	list-style: none;
+	margin: 0;
+	padding: 0;
+  list-style: none;
 }
+
+/* элементы списка */
 .portfolio-item {
+  width: 184px;
 	margin: 0px 15px 27px 15px;
-	background: red;
   
-	width: 184px;
 	float: left;
 	text-align: center;
 }
+/* блок с сайтом на фоне */
 .site-item {
   width: 180px;
   height: 125px;
-  background: url(../img/portfolio.jpg) 0 0 no-repeat;
   margin-bottom: 10px;
+
   border-radius: 4px;
+  background: url(../img/portfolio.jpg) 0 0 no-repeat;
   border: 2px solid #3ba8c0;
+  overflow: hidden;
 }
+
+/* отступы слева у первых */
 .portfolio-item:nth-child(3n-2) {
-  background: blue;
   margin-left: 19px;
 }
+/* отступы справа у последних */
 .portfolio-item:nth-child(4n-1) {
-  background: green;
   margin-right: 19px;
 }
+
+/* блок для появления ссылки */
 .site-link {
-  display: block;
   width: 180px;
   height: 125px;
+  display: block;
+
   background: rgba(75, 90, 120, 0);
   transition: background linear 0.1s;
 }
+/* сама ссылка на работу-сайт */
 .site-name {
   display: inline-block;
+  padding: 0 5px;
   position: relative;
   top: 55px;
+  font-size: 0px;
+
   text-decoration: none;
-  padding: 0 5px;
   color: #eff3f7;
   border-radius: 4px;
-  font-size: 0px;
   transition: all 0.5s;
 }
+/* изменение прозрачности фона блока при появлении  */
 .site-item:hover .site-link {
-
   background: rgba(75, 90, 120, 0.7);
 }
+/* появление самой ссылки */
 .site-item:hover .site-name {
   font-size: 16px;
   border: 2px solid #eff3f7;
+}
+/* стиль подписи url под картинкой */
+.site-url {
+  display: block;
+  margin-bottom: 15px;
+  padding: 0;
+
+  text-decoration: none;
+  font-family: 'fira_sanslight_italic';
+  font-size: 13px;
+  line-height: 100%;
+}
+/* стиль подписи информация под картинкой */
+.site-info {
+  margin-bottom: 15px;
+  padding: 0 5px;
+
+  font-size: 15px;
+  line-height: 100%;
+  color: #4a545d;
+}
+/* блок новый проект */
+.site-item-new {
+  width: 180px;
+  height: 125px;
+  
+  margin-bottom: 0px;
+  border-radius: 4px;
+  background: #edf8fc url(../img/newproject.png) center 35px no-repeat;
+  border: 2px dashed #3ba8c0;
+}
+/* стиль ссылки в блоке новый проект */
+.site-name-new {
+  display: inline-block;
+  width: 85%;
+  height: 85%;
+  padding-top: 77px;
+
+  text-decoration: none;
+  color: #3ba8c0;
+  font-size: 13px;
 }
 

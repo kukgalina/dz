@@ -1,0 +1,166 @@
+/* ---форма обратной связи --- */
+
+/* обёртка формы обратной связи */
+.form-feedback-wrap {
+  width: 650px;
+  margin: 0;
+  padding: 0 0 182px 0;
+  overflow: hidden;
+
+  border-radius: 4px;
+  background: #eff3f7;
+}
+
+/* заголовок формы */
+.form-feedback-title {
+  width: 620px;
+  margin: 0 0 48px 0;
+  padding: 40px 15px 55px 15px;
+
+  font-family: 'fira_sansbook';
+  font-size: 27px;
+  color: #ffffff;
+  text-align: center;
+
+  background: #48cbe8;
+  box-shadow: inset 0 -17px 0 0 #67dffa;
+}
+
+/* контейнер с элементами формы */
+.form-feedback-box {
+  width: 402px;
+  margin: 0 auto;
+}
+
+/* контейнер: лабел + инпут */
+.form-feedback .name,
+.form-feedback .email-input {
+  margin: 0 0 19px 0;
+  padding: 0;
+}
+.form-feedback .message {
+  margin: 0 0 10px 0;
+}
+.form-feedback .captcha {
+  margin: 0 0 35px 0;
+}
+
+/* флоат */
+.form-feedback .name,
+.form-feedback .message,
+.form-feedback .captcha,
+.form-feedback .captcha-image,
+.form-feedback .code,
+.form-feedback .submit {
+  float: left;
+}
+.form-feedback .email-input,
+.form-feedback .reset {
+  float: right;
+}
+
+/* подписи инпутов */
+.form-feedback .label-text {
+  display: block;
+  margin: 0 0 2px -2px;
+  padding: 0;
+  font-size: 19px;
+  line-height: 100%;
+  color: #959aa8;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+/* стиль самих инпутов */
+.form-feedback .input-text {
+  width: 171px;
+  
+  font-size: 13px;
+  background: #fbfcfd;
+  border-radius: 4px;
+  border: 1px solid #48cde8;
+}
+.name .input-text,
+.email-input .input-text {
+  padding: 10px 11px 8px 8px;
+}
+
+.login-form .input-text:focus {
+  border: 1px solid #959aa8;
+}
+/* стиль плейхолдеров */
+.form-feedback .input-text::-webkit-input-placeholder {
+  color: #48cbe8; /* хром, сафари, опера */
+}
+.form-feedback .input-text::-moz-placeholder {
+  color: #48cbe8; /* файерфокс */
+}
+.form-feedback .input-text:-ms-input-placeholder { 
+  color: #48cbe8; /* ie */
+}
+
+/* инпут сообщение */
+.message .input-text {
+  min-width: 379px;
+  min-height: 168px;
+  max-width: 379px;
+  max-height: 168px;
+
+  margin: 0;
+  padding: 10px 11px 2px 8px;
+  resize: none;
+}
+
+/* введите код */
+.captcha .label-text {
+  font-size: 17px;
+}
+/* контейнер-обёртка каптчи */
+.captcha-image {
+  width: 189px;
+  height: 78px;
+  margin-right: 19px;
+  overflow: hidden;
+
+  border-radius: 4px;
+  border: 1px solid #48cde8;
+}
+.captcha .input-text {
+  margin-top: 24px;
+  padding: 4px 9px 4px 8px;
+}
+
+
+/* кнопки внизу формы */
+.form-feedback .input-button {
+  width: 140px;
+  font-family: 'fira_sansbook';
+  font-size: 19px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.form-feedback .submit .input-button {
+  padding-top: 1px;
+  padding-bottom: 3px;
+  background: #48cbe8;
+  box-shadow: inset 0 -1px 0 0 #44bfdb;
+  box-shadow: inset 0 -3px 0 0 #3ba8c0;
+}
+.form-feedback .reset .input-button {
+  padding-top: 1px;
+  padding-bottom: 3px;
+  background: #849db5;
+  box-shadow: inset 0 -1px 0 0 #7b92a8;
+  box-shadow: inset 0 -3px 0 0 #687b8f;
+}
+.form-feedback .submit .input-button:hover,
+.form-feedback .reset .input-button:hover {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  box-shadow: none;
+}
+
+
+/* --- конец форма обратной связи --- */

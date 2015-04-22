@@ -30,7 +30,9 @@
 .resume-info {
   padding-bottom: 44px;
 }
-
+.resume:last-child .resume-info {
+  padding-bottom: 40px;
+}
 
 /* фото */
 .my-photo {
