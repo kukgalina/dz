@@ -32,14 +32,14 @@ html, body {
   /* линия градиентом */
   background-color: #eff3f7;
   background-image: url(../img/line.png);
-  background-size: 100%;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
 
  
 .container-header {
-	width: 1200px; 
+	max-width: 1200px;
+  min-width: 960px; 
 	margin: 0 auto;
 }
 
@@ -48,6 +48,10 @@ html, body {
 	position: absolute;
 	top: 37px;
 	left: 0;
+}
+.caption-img {
+  position: absolute;
+  left: -9999px;
 }
 
 
@@ -66,11 +70,17 @@ html, body {
 	clear: both;
 }
 
+/* сайдбар */
+.sidebar {
+  width: 250px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
 
 /* -МЕНЮ- */
 .menu {
-  width: 250px;
-  float: left;
+  width: 100%;
   margin-bottom: 25px;
   font-family: 'fira_sansbook';
 }
@@ -121,11 +131,7 @@ html, body {
 
 /* -КОНТАКТЫ- */
 .contacts {
-  width: 250px;
-  float: left;
-}
-.contacts {
-  width: 250px;
+  width: 100%;
   overflow: hidden;
 
   font-family: 'fira_sansbook';
@@ -148,16 +154,10 @@ html, body {
   text-decoration: none;
   color: #ffffff; 
 }
-.contacts-link:after {
-  content: "";
-  display: none;
-  width: 90%;
-  height: 1px;
-  background: #fff;
+.contacts-link:hover {
+  text-decoration: underline;
 }
-.mail:hover .contacts-link:after {
-  display: block;
-}
+
 /* иконки контактов на заднем фоне */
 .mail {
   background: #41b9d4 url(../img/icon_mail.png) 42px center no-repeat;
@@ -224,14 +224,12 @@ html, body {
 
 /* --ФУТЕР-- */
 .it-footer {
-  width: 100%;
 	height: 80px;
   margin-top: -80px;
 
   /* линия градиентом */
   background-color: #eff3f7;
   background-image: url(../img/line.png);
-  background-size: 100%;
   background-position: center top;
   background-repeat: no-repeat;
  }
@@ -263,6 +261,9 @@ html, body {
   background: url(../img/lockclosed.png) left center no-repeat;
 
 }
+.button-authorization .login-open:hover {
+  background: url(../img/lockopen.png) left center no-repeat;
+}
 .button-authorization .logout {
   display: none;
   background: url(../img/lockopen.png) left center no-repeat;
@@ -273,4 +274,11 @@ html, body {
 
   text-align: center;
   font-size: 13px;
+}
+
+
+/* стиль ошибки инпута */
+.has-error {
+  background: #fad2d1;
+  border: 1px solid #f97e76;
 }

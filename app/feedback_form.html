@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<link rel="stylesheet" href="css/feedback_form.css">
+	<link rel="stylesheet" href="css/tooltip.css">
 	<!-- JS modernizr здесь-->
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -34,7 +35,7 @@
 		<header class="it-header">
 			<div class="container-header">
 				<!-- логотип -->
-				<a href="" class="logo">
+				<a href="index.html" class="logo">
 					<img src="img/logo.png" alt="логотип" class="logo-img">
 					<span class="caption-img"></span>
 				</a><!--конец кода логотипа -->
@@ -44,20 +45,6 @@
 
 		<!-- начало основного контента -->
 		<div class="container-body clearfix">
-			<!-- навигация -->
-			<div class="menu">
-				<ul class="menu-list">
-					<li class="menu-item">
-						<a href="index.html" class="menu-link">Обо мне</a>
-					</li>
-					<li class="menu-item">
-						<a href="portfolio.html" class="menu-link">Мои работы</a>
-					</li>
-					<li class="menu-item">
-						<a href="feedback_form.html" class="menu-link active">Связаться со мной</a>
-					</li>
-				</ul>
-			</div><!-- конец навигация -->
 
 			<!-- меняющийся контент -->
 			<div class="varying-content">
@@ -69,35 +56,43 @@
 					</div><!-- конец заголовок формы -->
 
 					<!-- форма обратной связи -->
-					<form action="" method="post" class="form-feedback">
+					<form action="mail.php" method="post" class="form-feedback" id="form-feedback">
 						<!-- контейнер с элементами формы -->
 						<div class="form-feedback-box clearfix">
+							<!-- Сообщение с сервера -->
+							<div class="server-result success-result">
+							</div>
+							<div class="server-result error-result">
+							</div>
 							<!-- напишите имя -->
 							<div class="name">
 								<label class="label-text" for="name">Имя</label>
-								<input type="text" class="input-text" id="name" name="name" placeholder="Как к Вам обращаться">
+								<input type="text" class="input-text" id="name" name="name" placeholder="Как к Вам обращаться" data-valid="Вы не ввели имя">
 							</div><!-- конец напишите имя -->
 
 							<!-- напишите почту -->
 							<div class="email-input">
 								<label class="label-text" for="email">Email</label>
-								<input type="email" class="input-text" id="email" name="email" placeholder="Куда мне писать">
+								<input type="email" class="input-text" id="email" name="email" placeholder="Куда мне писать" data-valid="Вы не ввели email" data-position="right">
 							</div><!-- конец напишите почту -->
 
 							<!-- напишите сообщение -->
 							<div class="message">
 								<label class="label-text" for="massage">Сообщение</label>
-								<textarea class="input-text" id="message" name="massage" placeholder="Кратко в чем суть"></textarea>
+								<textarea class="input-text" id="message" name="massage" placeholder="Кратко в чем суть" data-valid="Ваш вопрос"></textarea>
 							</div> <!-- конец напишите сообщение -->
 							<!-- напишите код с картинки -->
 							<div class="captcha clearfix">
 								<label class="label-text" for="captcha-response"> Введите код, указанный на картинке </label>
 								<!-- обёртка картинки-каптчи -->
 								<div id="captcha-image" class="captcha-image">
-									<img id="captcha-challenge" class="captcha-challenge" alt="Проверка по слову" src="../img/code.jpg">
+									<img id="captcha-challenge" class="captcha-challenge" src="img/code.jpg" height="79" width="191">
 								</div><!-- конец обёртка картинки-каптчи -->
 
-								<input type="text" id="captcha-response" class="input-text code" name="captcha-response" placeholder="Введите код">
+							<div class="code">
+								<input type="text" id="captcha-response" class="input-text" name="captcha-response" placeholder="Введите код" data-valid="Вы не ввели код" data-position="right">
+							</div>
+
 							</div><!-- конец напишите код с картинки -->
 
 							<!-- кнопка отправить -->
@@ -118,6 +113,22 @@
 
 			</div><!-- конец меняющийся контент -->
 
+			<aside class="sidebar">
+			<!-- навигация -->
+			<nav class="menu">
+				<ul class="menu-list">
+					<li class="menu-item">
+						<a href="index.html" class="menu-link">Обо мне</a>
+					</li>
+					<li class="menu-item">
+						<a href="portfolio.html" class="menu-link">Мои работы</a>
+					</li>
+					<li class="menu-item">
+						<a url="feedback_form.html" class="menu-link active">Связаться со мной</a>
+					</li>
+				</ul>
+			</nav><!-- конец навигация -->
+
 			<!-- контакты -->
 			<div class="contacts">
 				<div class="contacts-title">
@@ -125,16 +136,24 @@
 				</div>
 				<ul class="contacts-list">
 					<li class="contacts-item">
-						<a href="" class="contacts-link mail">ya.mail.gk@yandex.ru</a>
+						<a href="mailto:lkuklinal@gmail.com" class="contacts-link mail">
+							<span class="contact-text">lkuklinal@gmail.com</span>
+						</a>
 					</li>
 					<li class="contacts-item">
-						<a href="" class="contacts-link telephon">+79814230204</a>
+						<a href="tel:+79814230204" class="contacts-link telephon">
+							<span class="contact-text">+79814230204</span>
+						</a>
 					</li>
 					<li class="contacts-item">
-						<a href="" class="contacts-link skype">galya_kuklina</a>
+						<a href="skype:galya_kuklina?chat" class="contacts-link skype">
+							<span class="contact-text">galya_kuklina</span>
+						</a>
 					</li>
 				</ul>
 			</div><!-- конец контакты -->
+
+			</aside>
 
 			<!-- соцкнопки -->
 			<div class="socmedia">
@@ -178,6 +197,12 @@
 
 
 	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/feedback_form.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/tooltip.js"></script>
+
+	
+	
+
 </body>
 </html>

@@ -55,6 +55,8 @@
   width: 382px;
   padding: 20px;
 
+  color: #48cbe8; 
+
   border-radius: 4px;
   background: #ffffff;
   border:1px solid #48cbe8;
@@ -92,5 +94,4 @@
 .login-form .input-button:hover {
   padding: 12px 65px 13px;
   box-shadow: none;
-  
 }

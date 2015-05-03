@@ -38,16 +38,26 @@
 .my-photo {
   float: left;
   margin: 20px 21px 0 55px;
+
 }
-.img-wrap{
+.img-wrap {
   width: 141px;
   height: 141px;
   overflow: hidden;
   border-radius: 50%;
   border: 5px solid #3ba8c0;
+
+   -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
 }
 .it-my-photo {
   width: 100%;
+}
+.img-wrap:hover {
+  border: 5px solid #44cbe8;
 }
 
 

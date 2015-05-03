@@ -23,15 +23,17 @@
 	margin: 0;
 	padding: 0;
   list-style: none;
+  font-size: 0;
 }
 
 /* элементы списка */
 .portfolio-item {
+  display: inline-block;
   width: 184px;
 	margin: 0px 15px 27px 15px;
   
-	float: left;
 	text-align: center;
+  vertical-align: top;
 }
 /* блок с сайтом на фоне */
 .site-item {

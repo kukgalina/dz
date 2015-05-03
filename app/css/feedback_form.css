@@ -32,6 +32,30 @@
   margin: 0 auto;
 }
 
+
+/* ответы сервера  */
+.server-result {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 8px;
+  border-radius: 4px;
+  font-family: ;
+  font-size: 15px;
+} 
+
+.success-result {
+  display: none;
+  color: #49bb7b;
+  background: #b8e1ce;
+  border: 1px solid #49bb7b;
+}
+
+.error-result {
+  display: none;
+  color: #f97e76;
+  background: #f2cccd;
+  border: 1px solid #f97e76;
+}
 /* контейнер: лабел + инпут */
 .form-feedback .name,
 .form-feedback .email-input {
@@ -48,13 +72,12 @@
 /* флоат */
 .form-feedback .name,
 .form-feedback .message,
-.form-feedback .captcha,
 .form-feedback .captcha-image,
-.form-feedback .code,
 .form-feedback .submit {
   float: left;
 }
 .form-feedback .email-input,
+.form-feedback .code,
 .form-feedback .reset {
   float: right;
 }
@@ -73,10 +96,12 @@ textarea:focus, input:focus {
   outline: none;
 }
 /* стиль самих инпутов */
-.form-feedback .input-text {
+.input-text {
   width: 171px;
   
   font-size: 13px;
+  color: #48cbe8;
+  
   background: #fbfcfd;
   border-radius: 4px;
   border: 1px solid #48cde8;
@@ -127,8 +152,11 @@ textarea:focus, input:focus {
   border: 1px solid #48cde8;
 }
 .captcha .input-text {
-  margin-top: 24px;
   padding: 4px 9px 4px 8px;
+}
+.code {
+  float: right;
+  margin-top: 24px;
 }
 
 
@@ -163,4 +191,10 @@ textarea:focus, input:focus {
 }
 
 
+/* стиль ошибки инпута */
+.input-error {
+  background: #fad2d1;
+  border: 1px solid #f97e76;
+  color: #8ab4c3;
+}
 /* --- конец форма обратной связи --- */
