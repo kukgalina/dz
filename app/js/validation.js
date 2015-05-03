@@ -46,7 +46,7 @@ var validation = (function (){
 		_clearForm = function() { //очищает форму
 
 			var form = $(this);
-			console.log($(this));
+			
 			form.find('.tooltip-box').remove();// удаляем тултипы
 			form.find('.input-error').removeClass('input-error');//убирает красную обводку
 			form.find('.error-result, success-result').text('').hide(); //скрываем сообщения с сервера 

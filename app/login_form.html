@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<link rel="stylesheet" href="css/login_form.css">
+		<link rel="stylesheet" href="css/tooltip.css">
 	<!-- JS modernizr здесь-->
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -51,13 +52,13 @@
 			</div><!-- конец заголовок формы -->
 
 			<!-- форма входа -->
-			<form action="" method="post" class="login-form">
+			<form action="" method="post" class="login-form" id="login-form">
 				<!-- логин -->
 				<div class="input-box">
 					<label class="label-text" for="login">
 						Логин
 					</label>
-					<input type="text" class="input-text" id="login" name="login" placeholder="Введите логин">
+					<input type="text" class="input-text-login" id="login" name="login" placeholder="Введите логин" data-valid="Введите логин" data-position="left">
 				</div><!-- конец логин -->
 
 				<!-- пароль -->
@@ -65,7 +66,7 @@
 					<label class="label-text" for="password">
 						Пароль
 					</label>
-					<input type="password" class="input-text" id="password" name="password" placeholder="Введите пароль">
+					<input type="password" class="input-text-login" id="password" name="password" placeholder="Введите пароль" data-valid="Введите пароль" data-position="left">
 				</div><!-- конец пароль -->
 
 				<!-- кнопка войти -->
@@ -101,7 +102,7 @@
 <!-- конец footer -->
 
 	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/tooltip.js"></script>
 	<script src="js/login_form.js"></script>
 	<script src="js/validation.js"></script>
 </body>

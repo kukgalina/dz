@@ -51,7 +51,7 @@
   color: #959aa8;
 }
 /* стиль самих инпутов */
-.login-form .input-text {
+.input-text-login {
   width: 382px;
   padding: 20px;
 
@@ -62,17 +62,17 @@
   border:1px solid #48cbe8;
 
 }
-.login-form .input-text:focus {
+.login-form .input-text-login:focus {
   border: 1px solid #959aa8;
 }
 /* стиль плейхолдеров */
-.login-form .input-text::-webkit-input-placeholder {
+.login-form .input-text-login::-webkit-input-placeholder {
   color: #48cbe8; /* хром, сафари, опера */
 }
-.login-form .input-text::-moz-placeholder {
+.login-form .input-text-login::-moz-placeholder {
   color: #48cbe8; /* файерфокс */
 }
-.login-form .input-text:-ms-input-placeholder { 
+.login-form .input-text-login:-ms-input-placeholder { 
   color: #48cbe8; /* ie */
 }
 /* кнопка войти */

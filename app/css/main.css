@@ -277,8 +277,26 @@ html, body {
 }
 
 
-/* стиль ошибки инпута */
-.has-error {
-  background: #fad2d1;
+/* ответы сервера  */
+.server-result {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 8px;
+  border-radius: 4px;
+  font-family: ;
+  font-size: 15px;
+} 
+
+.success-result {
+  display: none;
+  color: #49bb7b;
+  background: #b8e1ce;
+  border: 1px solid #49bb7b;
+}
+
+.error-result {
+  display: none;
+  color: #f97e76;
+  background: #f2cccd;
   border: 1px solid #f97e76;
 }

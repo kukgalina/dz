@@ -129,3 +129,181 @@
   font-size: 13px;
 }
 
+
+/* ПОПАП */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 362px;
+  min-height: 110px;
+/*  margin-left: -181px;
+  margin-top: -250px;*/
+  overflow: hidden;
+  z-index: 2000;
+  background: #eff3f7;
+   /* скругление */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /* тень */
+  -webkit-box-shadow: 0px 6px 13px 0 rgba(13, 16, 7, 0.35);
+  -moz-box-shadow: 0px 6px 13px 0 rgba(13, 16, 7, 0.35);
+  box-shadow: 0px 6px 13px 0 rgba(13, 16, 7, 0.35);
+}
+.popup-bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgb(129, 142, 155);
+}
+.popup-newproject-success {
+  display: none;
+}
+
+/* заголовок формы */
+.form-newproject-title {
+  margin: 0 0 20px 0;
+  padding: 10px;
+  
+  font-family: firasans_regular;
+  font-size: 25px;
+  color: #ffffff;
+  background: #48cbe8;
+  -webkit-box-shadow: hoff voff blur color;
+  -moz-box-shadow: inset hoff voff blur color;
+  box-shadow: 0 9px 0 0 #67dffa ;
+  
+}
+
+/* стиль формы добавление проекта */
+.form-newproject {
+  width: 320px;
+  margin: 0 auto 20px;
+}
+
+/* контейнер: лабел + сам инпут */
+.input-box {
+  width: 322px;
+  margin: 0;
+  padding: 0;
+}
+
+/* стиль надписи */
+.label-text {
+  display: block;
+  margin-bottom: 8px;
+  
+  font-family: firasans book;
+  font-size: 17px;
+  color: #959aa8;
+  /* background: red; */ 
+}
+
+/* сам инпут */
+.input-text {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 11px 10px;
+  
+  font-family: firasans light;
+  font-size: 13px;
+  color: #48cbe8;
+  
+  background: #fbfcfd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;  
+  border: 1px solid #48cbe8;
+}
+
+
+/* плейсхолдеры */
+.input-text::-webkit-input-placeholder {
+  color: #48cbe8; /* Chrome, Safari, Opera */
+}
+.input-text::-moz-placeholder {
+  color: #48cbe8; /* Firefox */
+}
+.input-text:-ms-input-placeholder { 
+  color: #48cbe8; /* IE */
+}
+/* добавление картинки проекта */
+
+/* кнопка добавить изображение */
+.file{
+  overflow:hidden;
+  position:relative;
+  width:322px;
+}
+
+.file .input-text{
+  width: 250px;
+  vertical-align: top;
+  margin-bottom: 10px;
+  padding: 12px 10px;
+  
+  font-family: firasans light;
+  font-size: 13px;
+  color: #48cbe8;
+  
+  background: #fbfcfd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;  
+  border: 1px solid #48cbe8;
+  overflow:hidden;
+}
+
+.file .button-upload{
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  margin-left: -9px;
+  vertical-align: top;
+  background: #48cbe8 url(http://gkuklina.ru/img/7.png) center center no-repeat;
+    border-radius: 0px 4px 4px 0px;
+    -moz-border-radius: 0px 4px 4px 0px;
+    -webkit-border-radius: 0px 4px 4px 0px;
+  border: 1px solid #48cbe8;
+}
+
+.file .upload-file {
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    cursor:pointer;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); 
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;    
+}
+
+.submit {
+  text-align: center;
+}
+.input-button {
+  width: 140px;
+  height: 31px;
+  
+  font-family: firasans book;
+  font-size: 19px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.submit .input-button {
+  background: #48cbe8;
+  box-shadow: inset 0 -1px 0 0 #44bfdb;
+  box-shadow: 0 2px 0 0 #3ba8c0;
+}
+
+
+/*  end ПОПАП */

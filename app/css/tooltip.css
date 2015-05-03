@@ -85,5 +85,11 @@
 	border-left: 9px solid #f97e76;
 }
 
-
 /*  end тултипы  */
+
+/* стиль ошибки инпута */
+.input-error {
+  background: #fad2d1;
+  border: 1px solid #f97e76;
+  color: #8ab4c3;
+}
