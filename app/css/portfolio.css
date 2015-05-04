@@ -140,7 +140,7 @@
   min-height: 110px;
 /*  margin-left: -181px;
   margin-top: -250px;*/
-  overflow: hidden;
+  /*overflow: hidden;*/
   z-index: 2000;
   background: #eff3f7;
    /* скругление */
@@ -175,10 +175,16 @@
   font-size: 25px;
   color: #ffffff;
   background: #48cbe8;
-  -webkit-box-shadow: hoff voff blur color;
-  -moz-box-shadow: inset hoff voff blur color;
+  -webkit-box-shadow: 0 9px 0 0 #67dffa;
+  -moz-box-shadow: 0 9px 0 0 #67dffa;
   box-shadow: 0 9px 0 0 #67dffa ;
-  
+}
+
+.popup-close {
+  width: 25px;
+  height: 25px;
+  float: right;
+  background: url(../img/close.png) 50% 50% no-repeat;
 }
 
 /* стиль формы добавление проекта */

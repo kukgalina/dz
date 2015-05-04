@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/tooltip.css">
 	<!-- JS modernizr здесь-->
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -185,10 +186,12 @@
 
 <div class="popup popup-newproject" id="popup-newproject">
 	<div class="form-newproject-wrap">
-		<div class="form-newproject-title">
+		<div class="form-newproject-title clearfix">
 			Добавление проекта
+			<div class="popup-close">
+			</div>
 		</div>
-		<form action="" method="post" class="form-newproject">
+		<form action="" method="post" class="form-newproject" id="form-newproject">
 
 			<div class="server-result error-result">
 			</div>
@@ -201,8 +204,8 @@
 			<div class="input-box">
 				<label class="label-text">Картинка проекта</label>
 				<div class="file">
-					<input type="file" class="upload-file">
-					<input type="text" class="input-text" placeholder="Загрузите изображение" data-valid="изображение">
+					<input type="file" class="upload-file" data-valid="изображение">
+					<input type="text" class="input-text" placeholder="Загрузите изображение">
 					<div class="button-upload"></div>
 				</div>
 			</div>
@@ -233,5 +236,8 @@
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/popap.js"></script>
+	<script src="js/new_project.js"></script>
+	<script src="js/tooltip.js"></script>
+	<script src="js/validation.js"></script>
 </body>
 </html>

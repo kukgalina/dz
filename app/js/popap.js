@@ -19,7 +19,7 @@ var popup = (function (){
 			
 			$('#site-name-new').on('click', opening);
 			$('.popup-bg').css({opacity: 0.75});
- 			$('.popup-bg').on('click', _closing); //при клике на Х и на фон закрытие
+ 			$('.popup-close, .popup-bg').on('click', _closing); //при клике на Х и на фон закрытие
  		},
 
  		_positionCenter = function() {
