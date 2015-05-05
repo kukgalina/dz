@@ -192,10 +192,11 @@ html, body {
 .socmedia-item {
   width: 47px;
   height: 47px;
+  margin-right: 24px;
   display: inline-block;
 }
-.socmedia-item:not(:last-child) {
-	margin-right: 24px;
+.socmedia-item:last-child {
+	margin-right: 0px;
 }
 .socmedia-link {
   width: 100%;

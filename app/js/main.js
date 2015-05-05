@@ -1,0 +1,1 @@
+$('input[placeholder], textarea[placeholder]').placeholder();// для старых браузеров

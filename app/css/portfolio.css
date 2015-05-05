@@ -171,7 +171,7 @@
   margin: 0 0 20px 0;
   padding: 10px;
   
-  font-family: firasans_regular;
+  font-family: 'fira_sansregular';
   font-size: 25px;
   color: #ffffff;
   background: #48cbe8;
@@ -205,7 +205,7 @@
   display: block;
   margin-bottom: 8px;
   
-  font-family: firasans book;
+  font-family: 'fira_sansbook';
   font-size: 17px;
   color: #959aa8;
   /* background: red; */ 
@@ -254,7 +254,7 @@
   margin-bottom: 10px;
   padding: 12px 10px;
   
-  font-family: firasans light;
+  font-family:  'fira_sanslight';
   font-size: 13px;
   color: #48cbe8;
   
@@ -272,7 +272,7 @@
   height: 40px;
   margin-left: -9px;
   vertical-align: top;
-  background: #48cbe8 url(http://gkuklina.ru/img/7.png) center center no-repeat;
+  background: #48cbe8 url(../img/img-file.png) center center no-repeat;
     border-radius: 0px 4px 4px 0px;
     -moz-border-radius: 0px 4px 4px 0px;
     -webkit-border-radius: 0px 4px 4px 0px;
