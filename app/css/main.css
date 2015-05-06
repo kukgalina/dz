@@ -11,11 +11,21 @@ body {
 html, body {
   height: 100%;
 }
+
 .browsehappy {
+  width: 100%;
   color: #f97e76;
-  background: #f2cccd;
+  margin: 0 0;
+  padding: 20px  auto;
+  background-color: #f2cccd;
   border: 1px solid #f97e76;
   text-align: center;
+}
+.browsehappy a {
+  color: #f97e76;
+  text-decoration: none;
+  font-style: italic;
+  
 }
 
 /* прибиваем footer к низу страницы */
@@ -33,6 +43,7 @@ html, body {
 
 /* --ХЭДЕР-- */
 .it-header {
+  min-width: 960px;
 	min-height: 119px;
   /* линия градиентом */
   background-color: #eff3f7;
@@ -46,6 +57,7 @@ html, body {
 	max-width: 1200px;
   min-width: 960px; 
 	margin: 0 auto;
+  position: relative;
 }
 
 /* абсолютно позиционируем логотип */
@@ -230,6 +242,7 @@ html, body {
 
 /* --ФУТЕР-- */
 .it-footer {
+  min-width: 960px;
 	height: 80px;
   margin-top: -80px;
 
