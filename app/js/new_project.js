@@ -8,17 +8,27 @@ var newProject = (function (){ //самовызывающаяся функция
 
 		_setUpListners = function() { //слежка за событиями
 			$('#form-newproject').on('submit', _submitForm);// когда сабмит - вызываем метод сабмитформ
-			$('#form-newproject').on('change', '.file .upload-file', _fileValue);//когда быбрали файл
+			$('#form-newproject').on('change', '.upload-file', _fileValue);//когда быбрали файл
+			$('#form-newproject').on('click', '.upload-file', _removeUploadError);//убираем ошибку когда добавили файл
 		},
 
+		 _removeUploadError = function(){ // 
+		 		var upload = $('.upload'),
+		 			upVal = upload.val(),
+		 			btnUpload = $('.button-upload');
+
+		 		upload.removeClass('input-error');
+		 		btnUpload.removeClass('upload-error');
+				upload.next('.tooltip-box').remove('.tooltip-box');
+		},
 
 		_fileValue = function(){ // присвоение скрытого value поддельному
 
 		$('.file').each(function(){
-    	$(this).find('.input-text').val($(this).find('.upload-file').val());
+    	$(this).find('.upload').val($(this).find('.upload-file').val());
 		});
 
-    	$(this).parents('.file').find('.file .input-text').val($(this).val());
+    	$(this).parents('.file').find('.upload').val($(this).val());
 		},
 		
 		_submitForm = function (ev) {

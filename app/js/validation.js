@@ -16,20 +16,21 @@ var validation = (function (){
 
 				valid = true;
 
-			elemNext.remove();
+			elemNext.remove('.tooltip-box');
 
 			$.each(element, function(index, val) {
 				var element = $(val),
 				val = element.val(),
+				btnUpload = element.next('.button-upload'), 
 				textError = element.attr('data-valid'),
 				pos = element.attr('data-position');
-				
+
 			if(val.length === 0){// если пустой инпут, то добавляем обводку и тултип
 				element.addClass('input-error');
+				btnUpload.addClass('upload-error');
 				element.tooltip({ content: textError, position: pos});
 				valid = false;
 			}
-
 		});
 
 		return valid;
@@ -54,10 +55,11 @@ var validation = (function (){
 
 		_removeError = function() { //убирает красную обводку у инпутов  и тултипы
 			
-			var next = $(this).next();
+			var next = $(this).next('.tooltip-box');
 
 			$(this).removeClass('input-error');
 			next.remove();
+			$('.button-upload').removeClass('upload-error');
 		};
 
 

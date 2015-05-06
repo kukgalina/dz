@@ -179,7 +179,7 @@
   -moz-box-shadow: 0 9px 0 0 #67dffa;
   box-shadow: 0 9px 0 0 #67dffa ;
 }
-
+/* кнопка закрыть попап */
 .popup-close {
   width: 25px;
   height: 25px;
@@ -212,12 +212,12 @@
 }
 
 /* сам инпут */
-.input-text {
+.input-text-project {
   width: 300px;
   margin-bottom: 10px;
   padding: 11px 10px;
   
-  font-family: firasans light;
+  font-family:'fira_sanslight';
   font-size: 13px;
   color: #48cbe8;
   
@@ -227,7 +227,9 @@
   border-radius: 4px;  
   border: 1px solid #48cbe8;
 }
-
+textarea:focus, input:focus{
+  outline: none;
+}
 
 /* плейсхолдеры */
 .input-text::-webkit-input-placeholder {
@@ -241,56 +243,58 @@
 }
 /* добавление картинки проекта */
 
-/* кнопка добавить изображение */
+/* обёртка инпута добавить изображение */
 .file{
-  overflow:hidden;
   position:relative;
   width:322px;
 }
-
-.file .input-text{
-  width: 250px;
-  vertical-align: top;
-  margin-bottom: 10px;
-  padding: 12px 10px;
-  
-  font-family:  'fira_sanslight';
-  font-size: 13px;
-  color: #48cbe8;
-  
-  background: #fbfcfd;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;  
-  border: 1px solid #48cbe8;
-  overflow:hidden;
+/* поддельный инпут для загрузки файла */
+.upload {
+  width: 255px;
 }
-
-.file .button-upload{
-  display: inline-block;
-  width: 50px;
-  height: 40px;
-  margin-left: -9px;
-  vertical-align: top;
-  background: #48cbe8 url(../img/img-file.png) center center no-repeat;
+/* сама кнопка добавить изображение */
+.button-upload {
+  display: block;
+  width: 52px;
+  height: 43px;
+  margin-left: -4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/img-file.png) center center no-repeat;
+  background-color: #48cbe8;
     border-radius: 0px 4px 4px 0px;
     -moz-border-radius: 0px 4px 4px 0px;
     -webkit-border-radius: 0px 4px 4px 0px;
+  z-index: 5;
   border: 1px solid #48cbe8;
 }
-
+/*  */
+.upload-error {
+  border: 1px solid #f97e76;
+}
+/* сам инпут с типом файл */
 .file .upload-file {
+    width:52px;
     position:absolute;
-    width:100%;
-    height: 100%;
-    top:0px;
-    left:0px;
+    top: 0;
+    right: 0;
+    margin: -1px;
+    padding: 11px 0;
+    /*clip: rect(0, 0 , 0, 0);*/
+    z-index: 6;
+    overflow: hidden;
     cursor:pointer;
     filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); 
     -moz-opacity: 0;
     -khtml-opacity: 0;
-    opacity: 0;    
+    opacity: 0; 
 }
+
+
+
+
+
 
 .submit {
   text-align: center;

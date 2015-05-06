@@ -23,7 +23,6 @@ html, body {
   min-height: 100%;
   height: auto!important;
   position: relative;
-  overflow: hidden;
 }
 .wrap:after {
   height: 80px;
